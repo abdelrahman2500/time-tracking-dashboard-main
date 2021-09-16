@@ -1,0 +1,109 @@
+body {
+  background-color: #0D1323;
+  color: #FFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  margin: 100px auto;
+}
+.main-wrapper .box {
+  background-color: #1D204B;
+  border-radius: 15px;
+}
+.main-wrapper .box.first {
+  min-height: 100%;
+}
+.main-wrapper .box .full-info {
+  background-color: #5746EA;
+  border-radius: 15px;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+  min-height: 60%;
+}
+.main-wrapper .box .full-info .img-box {
+  width: 60px;
+}
+.main-wrapper .box .full-info .img-box img {
+  width: 100%;
+}
+.main-wrapper .box .full-info .info p {
+  opacity: 0.5;
+  font-size: 20px;
+}
+.main-wrapper .box .full-info .info h3 {
+  font-size: 32px;
+}
+@media (max-width: 768px) {
+  .main-wrapper .box .full-info .res-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-wrapper .box .full-info p {
+    font-size: 18px;
+  }
+}
+.main-wrapper .box .links {
+  font-size: 22px;
+  transition: 0.3s;
+}
+.main-wrapper .box .links .link {
+  cursor: pointer;
+  opacity: 0.5;
+  margin-block: 10px;
+  transition: 0.3s;
+}
+.main-wrapper .box .links .link:hover, .main-wrapper .box .links .link.active {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .main-wrapper .box .links {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+.main-wrapper .outer-box .outer {
+  border-radius: 15px;
+}
+.main-wrapper .outer-box .outer .inner {
+  background-color: #1D204B;
+  border-radius: 15px;
+}
+.main-wrapper .outer-box .outer .inner p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.5;
+}
+.main-wrapper .outer-box .outer .inner h3 {
+  font-size: 26px;
+}
+.main-wrapper .outer-box .outer.one {
+  background-color: #D96C46;
+}
+.main-wrapper .outer-box .outer.two {
+  background-color: #56C2E6;
+}
+.main-wrapper .outer-box .outer.three {
+  background-color: #FF5E7D;
+}
+.main-wrapper .outer-box .outer.four {
+  background-color: #4BCF83;
+}
+.main-wrapper .outer-box .outer.five {
+  background-color: #7235D1;
+}
+.main-wrapper .outer-box .outer.six {
+  background-color: #F1C75B;
+}
+@media (max-width: 767px) {
+  .main-wrapper .outer-box {
+    padding: 0;
+  }
+}

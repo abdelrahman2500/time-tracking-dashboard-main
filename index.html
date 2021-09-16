@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/dist/style.css">
+</head>
+<body>
+<p class="d-none">
+  Report for
+  Jeremy Robson
+
+  Daily
+  Weekly
+  Monthly
+
+  Work
+  5hrs <!-- daily -->
+  Previous - 7hrs <!-- daily -->
+  32hrs <!-- weekly -->
+  Previous - 36hrs <!-- weekly -->
+  103hrs <!-- monthly -->
+  Previous - 128hrs <!-- monthly -->
+
+  Play
+  1hr <!-- daily -->
+  Previous - 2hrs <!-- daily -->
+  10hrs <!-- weekly -->
+  Previous - 8hrs <!-- weekly -->
+  23hrs <!-- monthly -->
+  Previous - 29hrs <!-- monthly -->
+
+  Study
+  0hrs <!-- daily -->
+  Previous - 1hr <!-- daily -->
+  4hrs <!-- weekly -->
+  Previous - 7hrs <!-- weekly -->
+  13hrs <!-- monthly -->
+  Previous - 19hrs <!-- monthly -->
+
+  Exercise
+  1hr <!-- daily -->
+  Previous - 1hr <!-- daily -->
+  4hrs <!-- weekly -->
+  Previous - 5hrs <!-- weekly -->
+  11hrs <!-- monthly -->
+  Previous - 18hrs <!-- monthly -->
+
+  Social
+  1hr <!-- daily -->
+  Previous - 3hrs <!-- daily -->
+  5hrs <!-- weekly -->
+  Previous - 10hrs <!-- weekly -->
+  21hrs <!-- monthly -->
+  Previous - 23hrs <!-- monthly -->
+
+  Self Care
+  0hrs <!-- daily -->
+  Previous - 1hr <!-- daily -->
+  2hrs <!-- weekly -->
+  Previous - 2hrs <!-- weekly -->
+  7hrs <!-- monthly -->
+  Previous - 11hrs <!-- monthly -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+</p>
+  <div class="main-wrapper text-capitalize">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-3 box first ">
+          <div class="full-info p-3">
+            <div class="row ">
+              <div class="col-4 col-md-12 res-img">
+                <div class="img-box">
+                  <img src="/images/image-jeremy.png" alt="">
+                </div>
+              </div>
+              <div class="col-8 col-md-12">
+                <div class="info mt-3">
+                  <p class="lead">report for</p>
+                  <h3>jeremy robson</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="links p-3">
+            <div class="row">
+              <div class="col-4 col-md-12 link">daily</div>
+              <div class="col-4 col-md-12 link">weekly</div>
+              <div class="col-4 col-md-12 link">monthly</div>
+            </div>
+          </div>
+        
+        </div>
+        <div class="col-12 col-md-9 ">
+          <div class="row g-3">
+            <div class="col-12 col-md-4 outer-box">
+              <div class="outer one pt-5">
+                <div class="inner p-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>
+                        work
+                        <i class="fas fa-ellipsis-h text-end"></i>
+                      </p>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <h3>
+                        32 hours
+                      </h3>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <p class="">last week - 36hrs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 outer-box">
+              <div class="outer two pt-5">
+                <div class="inner p-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>
+                        play
+                        <i class="fas fa-ellipsis-h text-end"></i>
+                      </p>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <h3>
+                        10 hours
+                      </h3>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <p class="">last week - 8hrs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 outer-box">
+              <div class="outer three pt-5">
+                <div class="inner p-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>
+                        study
+                        <i class="fas fa-ellipsis-h text-end"></i>
+                      </p>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <h3>
+                        5 hours
+                      </h3>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <p class="">last week - 3hrs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 outer-box">
+              <div class="outer four pt-5">
+                <div class="inner p-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>
+                        exercise
+                        <i class="fas fa-ellipsis-h text-end"></i>
+                      </p>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <h3>
+                        4 hours
+                      </h3>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <p class="">last week - 5hrs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 outer-box">
+              <div class="outer five pt-5">
+                <div class="inner p-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>
+                        social
+                        <i class="fas fa-ellipsis-h text-end"></i>
+                      </p>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <h3>
+                        5 hours
+                      </h3>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <p class="">last week - 10hrs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 outer-box">
+              <div class="outer six pt-5">
+                <div class="inner p-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <p>
+                        self care
+                        <i class="fas fa-ellipsis-h text-end"></i>
+                      </p>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <h3>
+                        2 hours
+                      </h3>
+                    </div>
+                    <div class="col-6 col-md-12 mt-2">
+                      <p class="">last week - 2hrs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

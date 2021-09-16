@@ -1,0 +1,100 @@
+body{
+    background-color: #0D1323;
+    color: #FFF;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-wrapper{
+    margin: 100px auto;
+    .box{
+        &.first{
+            min-height: 100%;
+        }
+        background-color: #1D204B;
+        border-radius: 15px;
+        .full-info{
+            background-color: #5746EA;
+            border-radius: 15px;
+            margin-right: -.75rem;
+            margin-left: -.75rem;
+            min-height: 60%;
+            .img-box{
+                width: 60px;
+                img{
+                    width: 100%;
+                }
+            }
+            .info{
+                p{
+                    opacity: .5;
+                    font-size: 20px;
+                }
+                h3{
+                    font-size: 32px;
+                }
+            }
+            @media (max-width: 768px){
+                .res-img{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+        .links{
+            font-size: 22px;
+            transition: .3s;
+            .link{
+                cursor: pointer;
+                opacity: .5;
+                margin-block: 10px;
+                transition: .3s;
+                &:hover, &.active{
+                    opacity: 1;
+                }
+            }
+            @media (max-width: 768px){
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+    .outer-box{
+        .outer{
+            border-radius: 15px;
+            .inner{
+                background-color: #1D204B;
+                border-radius: 15px;
+                p{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 12px;
+                    opacity: .5;
+                    i{
+    
+                    }
+                }
+                h3{
+                    font-size: 26px;
+                }
+            }
+            &.one{background-color: #D96C46;}
+            &.two{background-color: #56C2E6;}
+            &.three{background-color: #FF5E7D;}
+            &.four{background-color: #4BCF83;}
+            &.five{background-color: #7235D1;}
+            &.six{background-color: #F1C75B;}
+        }
+        @media (max-width: 767px){
+            padding: 0;
+        }
+    }
+
+}
